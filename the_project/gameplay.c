@@ -1,20 +1,31 @@
 #include "components.h"
 
 
-int menu() {
-    int input;
-    printf("\n\n\n\n\n");
-    printf("\t\t _________________\n");
-    printf("\t\t|                 |\n");
-    printf("\t\t|     1- Play     |\n");
-    printf("\t\t|     2- Level    |\n");
-    printf("\t\t|     3- Logs     |\n");
-    printf("\t\t|     4- Exit     |\n");
-    printf("\t\t|                 |\n");
-    printf("\t\t|_________________|\n");
+bool starts_the_game() {
+    for (int i = 0; i < width; i++) {field[0][i] = '\"'; field[height - 1][i] = '\"';}
 
-    input = getchar();
+    for (int i = 1; i < height - 1; i++) {
+        field[i][0] = '\"';
+        for (int j = 1; j < width - 1; j++)
+            field[i][j] = ' ';
+        field[i][width - 1] = '\"';}
 
+    show_field();
 
-    return input - 48;
+    return false;
+}
+
+void show_field() {
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+            printf("%c", field[i][j]);
+        }
+        printf("\n");
+    }
+
+//    for (int j = 0; j < width; j++) {
+//        printf("%c", field[1][j]);
+//    }
+
+    return ;
 }
