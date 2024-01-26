@@ -1,0 +1,7 @@
+getch() insted of getchar()
+	menu
+
+menu arrow keys
+
+the "\t" for massages
+	menu, atexit
