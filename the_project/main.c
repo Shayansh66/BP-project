@@ -18,11 +18,12 @@ int main() {
                 break;
             case 3:
                 break;
+            case 4:
+                app_is_open = false;
+                break;
         }
     }
 
-
-    getchar();
 
     return 0;
 }
@@ -33,4 +34,5 @@ void close_app() {
     printf("\n\n\n\n\n\n\n");
     printf("\t\tsee you next time :)");
     printf("\n\n\n\n\n\n\n");
+    getchar();
 }

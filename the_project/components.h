@@ -1,10 +1,11 @@
 #ifndef THE_PROJECT_COMPONENTS_H
 #define THE_PROJECT_COMPONENTS_H
 
+#include <ctype.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 
 #define height 20

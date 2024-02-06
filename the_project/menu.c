@@ -2,7 +2,8 @@
 
 
 int menu() {
-    int input;
+    char input;
+    int selected = 1;
     printf("\n\n\n\n\n");
     printf("\t\t _________________\n");
     printf("\t\t|                 |\n");
@@ -13,9 +14,34 @@ int menu() {
     printf("\t\t|                 |\n");
     printf("\t\t|_________________|\n");
 
-    input = getchar();
 
-
-    system("cls");
-    return input - 48;
+    while (1) {
+        input = getchar();
+        getchar();
+        if (isdigit(input)) {
+            if ('1' <= input && input <= '4') {
+                selected = input - 48;
+                system("cls");
+                return selected;
+            }
+        }
+        else if (isalpha(input)) {
+            switch (input) {
+                case 'w':
+                case 'W':
+                    if (selected > 1)
+                        selected--;
+                    break;
+                case 's':
+                case 'S':
+                    if (selected < 4)
+                        selected++;
+                    break;
+            }
+        }
+        else if (input == '\n') {
+            system("cls");
+            return selected;
+        }
+    }
 }

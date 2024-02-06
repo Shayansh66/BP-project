@@ -5,3 +5,5 @@ menu arrow keys
 
 the "\t" for massages
 	menu, atexit
+
+ascii art at menu

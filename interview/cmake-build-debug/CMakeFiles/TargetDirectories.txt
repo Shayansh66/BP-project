@@ -1,0 +1,3 @@
+/home/shayan/Desktop/my_project/cmake-build-debug/CMakeFiles/my_project.dir
+/home/shayan/Desktop/my_project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shayan/Desktop/my_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

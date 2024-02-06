@@ -1,0 +1,5 @@
+# ninja log v5
+1	17	1706540352337520423	CMakeFiles/my_project.dir/start_up.c.o	87495128e8d6caa6
+0	17	1706540352337520423	CMakeFiles/my_project.dir/main.c.o	649d0f6321df3d4b
+10	21	1706536954615680912	my_project	fef1afe7fc456362
+1	17	1706542098287820992	CMakeFiles/my_project.dir/menu.c.o	a25dca7d73690500
